@@ -47,9 +47,9 @@ body {
     color: hsl(229, 23%, 23%);
     font-size: 1.125rem;
     font-family: 'Kumbh Sans', sans-serif;
-    /* background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
-    background-position: top left, bottom right;
-    background-repeat: no-repeat; */
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: top 200% left 125%, bottom 200% right 125%;
+    background-repeat: no-repeat;
 }
 
 #showcase {
@@ -131,6 +131,11 @@ li {
     letter-spacing: 1px;
 }
 
+@media only screen and (min-width: 376px) {
+    body {
+        background-position: top 250% left -200px, bottom 250% right -200px;
+    }
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
